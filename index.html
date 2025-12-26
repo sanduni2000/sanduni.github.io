@@ -27,16 +27,43 @@
       line-height: 1.6;
     }
 
+    /* ===== Animations ===== */
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
     header {
       background: linear-gradient(135deg, var(--primary), var(--secondary));
       color: white;
-      padding: 60px 20px;
+      padding: 70px 20px;
       text-align: center;
+      animation: fadeUp 1s ease-out;
+    }
+
+    header img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid white;
+      margin-bottom: 15px;
+      transition: transform 0.4s ease;
+    }
+
+    header img:hover {
+      transform: scale(1.05);
     }
 
     header h1 {
       font-size: 2.6rem;
-      margin-bottom: 10px;
+      margin-bottom: 8px;
     }
 
     header p {
@@ -56,6 +83,12 @@
       border-radius: 12px;
       box-shadow: 0 10px 25px rgba(0,0,0,0.06);
       margin-bottom: 30px;
+      animation: fadeUp 0.8s ease forwards;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      transition: 0.3s ease;
     }
 
     h2 {
@@ -63,36 +96,12 @@
       margin-bottom: 15px;
     }
 
-    .skills {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 10px;
+    ul {
+      padding-left: 20px;
     }
 
-    .skill {
-      background: var(--secondary);
-      color: #065f46;
-      padding: 8px 14px;
-      border-radius: 20px;
-      font-size: 0.9rem;
-    }
-
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-    }
-
-    .project {
-      border-left: 4px solid var(--primary);
-      padding-left: 15px;
-    }
-
-    footer {
-      text-align: center;
-      padding: 30px 20px;
-      color: #4a5568;
-      font-size: 0.9rem;
+    li {
+      margin-bottom: 8px;
     }
 
     a {
@@ -104,111 +113,122 @@
     a:hover {
       text-decoration: underline;
     }
+
+    .contact a {
+      display: inline-block;
+      margin-right: 15px;
+      margin-top: 10px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #4a5568;
+      font-size: 0.9rem;
+      animation: fadeUp 1s ease-out;
+    }
   </style>
 </head>
 
 <body>
 
   <header>
+    <img src="profile.jpg" alt="Sanduni Rathnayake">
     <h1>Sanduni Rathnayake</h1>
-    <p>Data Science Graduate • Machine Learning Enthusiast • Nature Lover</p>
+    <p>Data Science Graduate • Machine Learning Engineer • Database & AI Enthusiast</p>
   </header>
 
   <section>
+
     <div class="card">
-      <h2>About Me</h2>
+      <h2>Professional Summary</h2>
       <p>
-        I am a passionate data science graduate with hands-on experience in machine learning,
-        deep learning, and data analysis. I enjoy building intelligent systems that solve
-        real-world problems, especially in computer vision and AI-driven automation.
+        As an IT graduate specializing in Data Science, I bring a strong foundation in SQL & NoSQL databases,
+        database monitoring, predictive modeling, and business intelligence. I approach problem-solving with
+        creativity, flexibility, and a collaborative mindset.
         <br/><br/>
-        I have experience working on academic, freelance, and industry-related projects,
-        and I’m currently seeking opportunities in data science or machine learning
-        roles (preferably hybrid).
+        Passionate about leveraging data science, machine learning, and AI to deliver meaningful insights
+        and contribute to high-impact, data-driven teams.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Work Experience</h2>
+
+      <h3>Studio Assistant – The Sourcing Collective (UK)</h3>
+      <p><em>Jul 2025 – Present</em></p>
+      <p>
+        Supporting studio coordination and daily operations through AI and LLM integrations,
+        automation tools, KPI tracking, recruitment support, and digital marketing initiatives.
+      </p>
+
+      <br/>
+
+      <h3>Intern Data Analyst – MAS Linea Aqua</h3>
+      <p><em>Jan 2023 – Oct 2023</em></p>
+      <ul>
+        <li>Built interactive Power BI dashboards and reports</li>
+        <li>Automated workflows using Power Automate & SharePoint</li>
+        <li>Analyzed data using SQL Server</li>
+        <li>Developed Graph Neural Network (GNN) models</li>
+      </ul>
+
+      <br/>
+
+      <h3>Freelance Machine Learning Engineer</h3>
+      <p><em>Jan 2023 – Present</em></p>
+      <p>
+        Developed ML & AI solutions using classification, regression, deep learning,
+        generative AI, and LLM techniques. Deployed models in Microsoft Azure.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Education</h2>
+      <p>
+        <strong>BSc (Hons) in Information Technology – Data Science</strong><br/>
+        Sri Lanka Institute of Information Technology<br/>
+        <em>Feb 2020 – Mar 2024</em>
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Publications</h2>
+      <p>
+        <a href="https://doi.org/10.47001/IRJIET/2023.711027" target="_blank">
+          ML-Based Approach for Enhancing Sewing Operator Training
+        </a>
+      </p>
+      <p>
+        <a href="https://doi.org/10.47001/IRJIET/2023.710075" target="_blank">
+          ML-Based Approach to Optimize Productivity in the Apparel Industry
+        </a>
       </p>
     </div>
 
     <div class="card">
       <h2>Technical Skills</h2>
-      <div class="skills">
-        <div class="skill">Python</div>
-        <div class="skill">Machine Learning</div>
-        <div class="skill">Deep Learning</div>
-        <div class="skill">Computer Vision</div>
-        <div class="skill">CNN</div>
-        <div class="skill">GNN</div>
-        <div class="skill">GANs</div>
-        <div class="skill">Pandas & NumPy</div>
-        <div class="skill">Data Preprocessing</div>
-        <div class="skill">Power BI</div>
-        <div class="skill">Power Automate</div>
-        <div class="skill">Google Colab</div>
-        <div class="skill">Hugging Face</div>
-      </div>
+      <ul>
+        <li>SQL Server, PostgreSQL, Oracle SQL</li>
+        <li>Database monitoring, tuning, ETL & warehousing</li>
+        <li>Python, Power BI, Power Automate</li>
+        <li>Machine Learning, Deep Learning, GNNs, Generative AI</li>
+        <li>Azure Cloud Deployment</li>
+      </ul>
     </div>
 
-    <div class="card">
-      <h2>Key Projects</h2>
-      <div class="projects">
-
-        <div class="project">
-          <h3>Tea Leaf Disease Detection (CNN)</h3>
-          <p>
-            Built and trained a convolutional neural network to classify tea leaf diseases
-            using image datasets. Focused on preprocessing, model evaluation, and accuracy
-            improvement using Google Colab.
-          </p>
-        </div>
-
-        <div class="project">
-          <h3>GNN-Based Hand Movement Detection</h3>
-          <p>
-            Developed a Graph Neural Network model for MAS Linea Aqua to identify
-            incorrect hand movements of sewing operators during training sessions.
-          </p>
-        </div>
-
-        <div class="project">
-          <h3>GAN Model Development</h3>
-          <p>
-            Designed and implemented a Generative Adversarial Network (GAN) to explore
-            synthetic data generation and creative AI applications.
-          </p>
-        </div>
-
-        <div class="project">
-          <h3>Data Warehouse & Sales Analytics</h3>
-          <p>
-            Built a data warehouse using Kaggle supermarket sales data, integrating
-            multiple file formats and designing fact and dimension tables for analysis.
-          </p>
-        </div>
-
-      </div>
-    </div>
-
-    <div class="card">
-      <h2>Experience & Interests</h2>
-      <p>
-        • Freelance work in machine learning and data-related projects<br/>
-        • Studio Assistant role supporting AI/LLM initiatives and operations<br/>
-        • Strong interest in computer vision, automation, and analytics<br/>
-        • Loves sky watching, aviation photography, and nature-inspired creativity
-      </p>
-    </div>
-
-    <div class="card">
+    <div class="card contact">
       <h2>Contact</h2>
-      <p>
-        📧 Email: <em>Available upon request</em><br/>
-        💼 LinkedIn: <em>To be added</em><br/>
-        🌐 Portfolio: <em>Currently building</em>
-      </p>
+      <a href="mailto:sandunirathnayake094@gmail.com">📧 sandunirathnayake094@gmail.com</a><br/>
+      <a href="http://linkedin.com/in/sanduni-rathnayake-32a819202" target="_blank">
+        💼 linkedin.com/in/sanduni-rathnayake-32a819202
+      </a>
     </div>
+
   </section>
 
   <footer>
-    © 2025 Sanduni Rathnayake • Built as a single-file personal portfolio
+    © 2025 Sanduni Rathnayake • Animated Portfolio on GitHub Pages
   </footer>
 
 </body>
