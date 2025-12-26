@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Sanduni Rathnayake | Data Scientist</title>
+  <title>Sanduni Rathnayake | Data, AI & Database Engineer</title>
 
   <style>
     :root {
-      --primary: #2f855a;
-      --secondary: #68d391;
-      --background: #f7fafc;
+      --primary: #1f7a5a;
+      --secondary: #5cc9a7;
+      --background: #f4f7fa;
       --text: #2d3748;
       --card: #ffffff;
     }
@@ -18,25 +18,18 @@
       box-sizing: border-box;
       margin: 0;
       padding: 0;
-      font-family: "Segoe UI", sans-serif;
+      font-family: "Segoe UI", system-ui, sans-serif;
     }
 
     body {
       background: var(--background);
       color: var(--text);
-      line-height: 1.6;
+      line-height: 1.65;
     }
 
-    /* ===== Animations ===== */
     @keyframes fadeUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(25px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     header {
@@ -44,16 +37,16 @@
       color: white;
       padding: 70px 20px;
       text-align: center;
-      animation: fadeUp 1s ease-out;
+      animation: fadeUp 1s ease;
     }
 
     header img {
-      width: 150px;
-      height: 150px;
+      width: 155px;
+      height: 155px;
       border-radius: 50%;
       object-fit: cover;
-      border: 4px solid white;
-      margin-bottom: 15px;
+      border: 4px solid #fff;
+      margin-bottom: 18px;
       transition: transform 0.4s ease;
     }
 
@@ -63,7 +56,7 @@
 
     header h1 {
       font-size: 2.6rem;
-      margin-bottom: 8px;
+      margin-bottom: 6px;
     }
 
     header p {
@@ -72,28 +65,27 @@
     }
 
     section {
-      max-width: 1000px;
-      margin: 40px auto;
+      max-width: 1100px;
+      margin: 45px auto;
       padding: 0 20px;
     }
 
     .card {
       background: var(--card);
-      padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.06);
-      margin-bottom: 30px;
+      padding: 32px;
+      border-radius: 14px;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+      margin-bottom: 35px;
       animation: fadeUp 0.8s ease forwards;
-    }
-
-    .card:hover {
-      transform: translateY(-3px);
-      transition: 0.3s ease;
     }
 
     h2 {
       color: var(--primary);
-      margin-bottom: 15px;
+      margin-bottom: 16px;
+    }
+
+    h3 {
+      margin-top: 10px;
     }
 
     ul {
@@ -102,6 +94,12 @@
 
     li {
       margin-bottom: 8px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
     }
 
     a {
@@ -114,122 +112,177 @@
       text-decoration: underline;
     }
 
-    .contact a {
-      display: inline-block;
-      margin-right: 15px;
-      margin-top: 10px;
-    }
-
     footer {
       text-align: center;
-      padding: 30px 20px;
-      color: #4a5568;
+      padding: 35px 20px;
       font-size: 0.9rem;
-      animation: fadeUp 1s ease-out;
+      color: #4a5568;
+      animation: fadeUp 1s ease;
     }
   </style>
 </head>
 
 <body>
 
-  <header>
-    <img src="IMG_8299.HEIC" alt="Sanduni Rathnayake">
-    <h1>Sanduni Rathnayake</h1>
-    <p>Data Science Graduate • Machine Learning Engineer • Database & AI Enthusiast</p>
-  </header>
+<header>
+  <img src="profile.jpg" alt="Sanduni Rathnayake">
+  <h1>Sanduni Rathnayake</h1>
+  <p>Data Science • Machine Learning • Database & BI Engineer</p>
+</header>
 
-  <section>
+<section>
 
-    <div class="card">
-      <h2>Professional Summary</h2>
-      <p>
-        As an IT graduate specializing in Data Science, I bring a strong foundation in SQL & NoSQL databases,
-        database monitoring, predictive modeling, and business intelligence. I approach problem-solving with
-        creativity, flexibility, and a collaborative mindset.
-        <br/><br/>
-        Passionate about leveraging data science, machine learning, and AI to deliver meaningful insights
-        and contribute to high-impact, data-driven teams.
-      </p>
+  <div class="card">
+    <h2>Professional Summary</h2>
+    <p>
+      IT graduate specializing in Data Science with strong expertise across databases,
+      business intelligence, machine learning, and AI-driven systems.
+      Experienced in SQL & NoSQL platforms, ETL pipelines, predictive modeling,
+      computer vision, and enterprise data solutions.
+      <br/><br/>
+      Known for a collaborative mindset, adaptability, and a strong problem-solving approach.
+      Passionate about delivering scalable, data-driven solutions that enhance operational
+      efficiency and decision-making.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Work Experience</h2>
+
+    <h3>Studio Assistant – The Sourcing Collective (UK)</h3>
+    <p><em>Jul 2025 – Present</em></p>
+    <ul>
+      <li>Integrated AI and LLM solutions to streamline studio and operational workflows</li>
+      <li>Supported KPI tracking, automation tools, recruitment coordination, and digital marketing</li>
+      <li>Collaborated with IT and business teams to improve service delivery</li>
+    </ul>
+
+    <br/>
+
+    <h3>Intern Data Analyst – MAS Linea Aqua</h3>
+    <p><em>Jan 2023 – Oct 2023</em></p>
+    <ul>
+      <li>Developed Power BI dashboards with SQL Server data sources</li>
+      <li>Automated workflows using Power Automate and SharePoint</li>
+      <li>Built predictive models and trained Graph Neural Networks (GNNs)</li>
+      <li>Supported data-driven decision-making</li>
+    </ul>
+
+    <br/>
+
+    <h3>Freelance Machine Learning Engineer</h3>
+    <p><em>Jan 2023 – Present</em></p>
+    <ul>
+      <li>Developed ML/AI solutions across multiple domains</li>
+      <li>Worked with classification, regression, clustering, deep learning, and LLMs</li>
+      <li>Deployed models in Microsoft Azure environments</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>Core Technical Skills</h2>
+
+    <div class="grid">
+      <div>
+        <h3>Data & BI</h3>
+        <ul>
+          <li>SSIS, SSAS, SSRS</li>
+          <li>Power BI & Excel Visualization</li>
+          <li>ETL Pipelines & Data Warehousing</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Machine Learning & AI</h3>
+        <ul>
+          <li>Classification, Regression, Clustering</li>
+          <li>Computer Vision (Image & Video)</li>
+          <li>Graph Neural Networks (GNNs)</li>
+          <li>NLP with NLTK & spaCy</li>
+          <li>Generative AI & LLM Concepts</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Databases</h3>
+        <ul>
+          <li>SQL Server, PostgreSQL, Oracle</li>
+          <li>PDB & CDB Management</li>
+          <li>Performance Tuning & Monitoring</li>
+          <li>Database Security & Access Control</li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Programming & Web</h3>
+        <ul>
+          <li>Python (Automation & Analysis)</li>
+          <li>HTML, CSS, JavaScript, PHP</li>
+          <li>FastAPI, React (Project-level)</li>
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <div class="card">
-      <h2>Work Experience</h2>
+  <div class="card">
+    <h2>Key Projects</h2>
+    <ul>
+      <li>
+        <strong>Real-Time Hand Movement Detection System</strong> – Computer vision and GNN-based
+        solution to enhance sewing operator training.
+      </li>
+      <li>
+        <strong>Customer Churn Prediction</strong> – Logistic regression model with EDA and
+        performance tuning.
+      </li>
+      <li>
+        <strong>SQL Server Monitoring & Reporting Environment</strong> – Real-time and batch
+        database performance monitoring.
+      </li>
+      <li>
+        <strong>Oracle 19c Database Administration</strong> – Installation, configuration,
+        recovery, CDB/PDB, RAC & standalone environments.
+      </li>
+    </ul>
+  </div>
 
-      <h3>Studio Assistant – The Sourcing Collective (UK)</h3>
-      <p><em>Jul 2025 – Present</em></p>
-      <p>
-        Supporting studio coordination and daily operations through AI and LLM integrations,
-        automation tools, KPI tracking, recruitment support, and digital marketing initiatives.
-      </p>
+  <!-- ⭐ NEW HOBBIES SECTION -->
+  <div class="card">
+    <h2>Interests & Hobbies</h2>
+    <ul>
+      <li>Sky watching and observing aircraft movements</li>
+      <li>Aviation and aircraft photography</li>
+      <li>Nature observation and landscape appreciation</li>
+      <li>Exploring how technology and creativity intersect</li>
+    </ul>
+  </div>
 
-      <br/>
+  <div class="card">
+    <h2>Certifications</h2>
+    <ul>
+      <li>Oracle Cloud Infrastructure 2024 – Generative AI Professional</li>
+      <li>Oracle Cloud Infrastructure 2023 – AI Foundations Associate</li>
+      <li>SQL for Data Science</li>
+      <li>APAN56 Datathon 2023</li>
+      <li>Introduction to Cybersecurity – Cisco Networking Academy</li>
+      <li>Artificial Intelligence Masterclass</li>
+    </ul>
+  </div>
 
-      <h3>Intern Data Analyst – MAS Linea Aqua</h3>
-      <p><em>Jan 2023 – Oct 2023</em></p>
-      <ul>
-        <li>Built interactive Power BI dashboards and reports</li>
-        <li>Automated workflows using Power Automate & SharePoint</li>
-        <li>Analyzed data using SQL Server</li>
-        <li>Developed Graph Neural Network (GNN) models</li>
-      </ul>
+  <div class="card">
+    <h2>Contact</h2>
+    <p>
+      📧 <a href="mailto:sanduni.rathnayake@gmail.com">sanduni.rathnayake@gmail.com</a><br/>
+      💼 <a href="http://linkedin.com/in/sanduni-rathnayake-32a819202" target="_blank">
+      linkedin.com/in/sanduni-rathnayake-32a819202</a>
+    </p>
+  </div>
 
-      <br/>
+</section>
 
-      <h3>Freelance Machine Learning Engineer</h3>
-      <p><em>Jan 2023 – Present</em></p>
-      <p>
-        Developed ML & AI solutions using classification, regression, deep learning,
-        generative AI, and LLM techniques. Deployed models in Microsoft Azure.
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Education</h2>
-      <p>
-        <strong>BSc (Hons) in Information Technology – Data Science</strong><br/>
-        Sri Lanka Institute of Information Technology<br/>
-        <em>Feb 2020 – Mar 2024</em>
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Publications</h2>
-      <p>
-        <a href="https://doi.org/10.47001/IRJIET/2023.711027" target="_blank">
-          ML-Based Approach for Enhancing Sewing Operator Training
-        </a>
-      </p>
-      <p>
-        <a href="https://doi.org/10.47001/IRJIET/2023.710075" target="_blank">
-          ML-Based Approach to Optimize Productivity in the Apparel Industry
-        </a>
-      </p>
-    </div>
-
-    <div class="card">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>SQL Server, PostgreSQL, Oracle SQL</li>
-        <li>Database monitoring, tuning, ETL & warehousing</li>
-        <li>Python, Power BI, Power Automate</li>
-        <li>Machine Learning, Deep Learning, GNNs, Generative AI</li>
-        <li>Azure Cloud Deployment</li>
-      </ul>
-    </div>
-
-    <div class="card contact">
-      <h2>Contact</h2>
-      <a href="mailto:sandunirathnayake094@gmail.com">📧 sandunirathnayake094@gmail.com</a><br/>
-      <a href="http://linkedin.com/in/sanduni-rathnayake-32a819202" target="_blank">
-        💼 linkedin.com/in/sanduni-rathnayake-32a819202
-      </a>
-    </div>
-
-  </section>
-
-  <footer>
-    © 2025 Sanduni Rathnayake • Animated Portfolio on GitHub Pages
-  </footer>
+<footer>
+  © 2025 Sanduni Rathnayake • Professional Portfolio
+</footer>
 
 </body>
 </html>
